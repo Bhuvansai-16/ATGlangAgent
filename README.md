@@ -30,6 +30,8 @@ debate/
 ├── requirements.txt  # Python dependencies (optional but recommended)
 ├── README.md         # This file
 
+---
+
 ⚙️ How to Run
 Install dependencies:
 
@@ -57,13 +59,13 @@ Edit
 python main.py
 Enter the debate topic when prompted.
 The debate will run automatically for 8 rounds, alternating between the Scientist and Philosopher.
-
+---
 Check the results:
 
 All rounds, arguments, memory states, and the final verdict are displayed in the console.
 
 The entire flow is also saved in log.txt.
-
+---
 📊 DAG Diagram
 See dag_diagram.png for a clear view of the flow:
 
@@ -71,7 +73,7 @@ nginx
 Copy
 Edit
 UserInputNode → AgentA → MemoryNode → AgentB → MemoryNode → JudgeNode
-
+---
 🧑‍⚖️ Judgment
 The JudgeNode reviews the entire debate transcript and uses an LLM to produce:
 
@@ -80,7 +82,7 @@ A structured summary of key points.
 A final winner based on argument strength.
 
 A logical justification for the verdict.
-
+---
 ✅ Deliverables
 ✔️ Fully working CLI app
 
@@ -91,12 +93,3 @@ A logical justification for the verdict.
 ✔️ DAG diagram (dag_diagram.png)
 
 ✔️ Demo video: Please see demo_video.mp4 or shared link for a 2–4 min walkthrough covering:
-
-How to run the program
-
-How the DAG works
-
-The judgment logic
-
-
----
