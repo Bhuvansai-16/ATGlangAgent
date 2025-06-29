@@ -1,0 +1,5 @@
+langchain
+openai
+python-dotenv
+graphviz
+langchain_google_genai
